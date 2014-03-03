@@ -1,0 +1,8 @@
+ {
+  "name": "meteor-cron",
+  "description": "Node Cron for Meteor",
+  "homepage": "https://github.com/particle4dev/meteor-cron",
+  "author": "Le Hoang (https://github.com/particle4dev)",
+  "version": "0.0.1",
+  "git": "https://github.com/particle4dev/meteor-cron.git",
+}
