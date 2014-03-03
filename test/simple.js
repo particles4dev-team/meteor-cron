@@ -32,26 +32,3 @@ if(Meteor.isServer){
         }
     });
 }
-/**
-var Fiber = Npm.require('fibers');
-
-var i = 0;
-var max = 3;
-var cronJob = CRON.CronJob;
-
-testAsyncMulti("simple", [
-    function (test, expect) {
-
-        var job = new cronJob('* * * * * *', expect(function(){
-            i++;
-            console.log('You will see this message ' + i + ' second');
-            if(i >= max){
-                this.stop();
-            }
-        }), expect(function(){
-            test.equal(i, max);
-        }), true, "America/Los_Angeles");
-
-    }]
-);
-*/
