@@ -1,0 +1,1 @@
+CRON = Npm.require('cron');
