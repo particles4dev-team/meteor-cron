@@ -1,5 +1,7 @@
 http://stackoverflow.com/questions/18120909/set-interval-in-node-js-vs-cron-job
 
+Run only on server side.
+
 Cron patterns
     
     second         0-59
