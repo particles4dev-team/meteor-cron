@@ -18,7 +18,7 @@ Package.on_use(function (api) {
 });
 
 Package.on_test(function (api) {
-    api.use(['meteor-cron'], ['server']);
+    api.use(['meteor-cron2'], ['server']);
     api.use(['tinytest', 'test-helpers'], ['server', 'client']);
     api.add_files('test/simple.js', ['server', 'client']);
 });
