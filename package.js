@@ -1,24 +1,36 @@
 Package.describe({
-  summary: "node-cron for meteor"
+  summary: 'node-cron for meteor',
+  version: '0.1.0',
+  git: 'https://github.com/particle4dev/meteor-cron.git'
 });
 
 // meteor test-packages ./
 Npm.depends({
-    "cron": "1.0.3",
-    "time": "0.10.0"
+    'cron': '1.0.4',
+    'time': '0.11.0'
 });
-Package.on_use(function (api) {
-    api.add_files([
-        'src/exports.js'
-    ], ['server']);
 
-    if (typeof api.export !== 'undefined') {
-        api.export('CRON', ['server']);
-    }
+Package.on_use(function (api) {
+  api.versionsFrom('METEOR@0.9.0');
+  api.add_files([
+    'src/exports.js',
+    'src/wrap.js'
+  ], ['server']);
+
+  if (typeof api.export !== 'undefined') {
+    api.export('CRON', ['server']);
+  }
 });
 
 Package.on_test(function (api) {
-    api.use(['meteor-cron2'], ['server']);
-    api.use(['tinytest', 'test-helpers'], ['server', 'client']);
+    api.use(['particle4dev:meteor-cron2'], ['server']);
+    api.use([
+      'tinytest',
+      'test-helpers'
+      ], ['server', 'client']);
     api.add_files('test/simple.js', ['server', 'client']);
+    api.add_files([
+      'test/newCronJob.js',
+      'test/onstop.js'
+      ], ['server']);
 });
