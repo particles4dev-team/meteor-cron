@@ -2,7 +2,7 @@
 
 Meteor v0.9.0
 ###
-    meteor add particle4dev:sass
+    meteor add particle4dev:meteor-cron2
 ###
 NOTE: Run only on server side.
 
