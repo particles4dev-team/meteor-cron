@@ -1,6 +1,24 @@
-http://stackoverflow.com/questions/18120909/set-interval-in-node-js-vs-cron-job
+###Add packages to your project by using command
 
-Run only on server side.
+Meteor v0.9.0
+###
+    meteor add particle4dev:sass
+###
+NOTE: Run only on server side.
+
+###Example 
+###
+    var i = 0;
+    var c = CRON.createNewCronJob('* * * * * *', function () {
+        i++;
+        console.log('You will see this message ' + i + ' second');
+    }, 'America/Los_Angeles');
+    // on stop
+    c.onStop(function () {
+        console.log('stop');
+    });
+    c.run();
+###
 
 Cron patterns
     
@@ -16,3 +34,6 @@ Example
     // at 11:30:00 AM. It does not run on Saturday
     // or Sunday.
     2  *  *  * * *   => Runs every 2nd seconds every minute.
+    
+###Reference
+http://stackoverflow.com/questions/18120909/set-interval-in-node-js-vs-cron-job
