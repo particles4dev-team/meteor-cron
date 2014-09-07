@@ -1,7 +1,7 @@
 Package.describe({
   name: 'particle4dev:meteor-cron2',
   summary: 'node-cron for meteor',
-  version: '1.0.0',
+  version: '1.0.1',
   git: 'https://github.com/particle4dev/meteor-cron.git'
 });
 
