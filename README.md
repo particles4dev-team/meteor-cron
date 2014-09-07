@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/particle4dev/meteor-cron.svg?branch=master)](https://travis-ci.org/particle4dev/meteor-cron)
+
 ###Add packages to your project by using command
 
 Meteor v0.9.0
