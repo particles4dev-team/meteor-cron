@@ -1,14 +1,14 @@
 Package.describe({
   name: 'particle4dev:meteor-cron2',
   summary: 'node-cron for meteor',
-  version: '1.0.1',
+  version: '1.1.0',
   git: 'https://github.com/particle4dev/meteor-cron.git'
 });
 
 // meteor test-packages ./
 Npm.depends({
-    'cron': '1.0.4',
-    'time': '0.11.0'
+  'cron': '1.0.9',
+  'time': '0.11.1'
 });
 
 Package.on_use(function (api) {
